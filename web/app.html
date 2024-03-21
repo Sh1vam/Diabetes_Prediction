@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <style>
+		/* Reset default browser styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Body styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+			background-color: #f8f8f8;
+		}
+
+		/* Container styles */
+		.container {
+			max-width: 600px;
+			margin: auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Heading styles */
+		h2 {
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		/* Form styles */
+		form {
+			margin-bottom: 20px;
+		}
+
+		label {
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: #555;
+		}
+
+		input[type="text"],
+		input[type="number"],
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			transition: border-color 0.3s ease;
+		}
+
+		input[type="text"]:focus,
+		input[type="number"]:focus,
+		select:focus {
+			border-color: #3399ff;
+			outline: none;
+		}
+
+		button {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			background-color: #3399ff;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		button:hover {
+			background-color: #2673c9;
+		}
+
+		/* Result area styles */
+		#result {
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-radius: 3px;
+			color: #333;
+		}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select, button {
+            margin-bottom: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Diabetes Prediction</h2>
+    <label for="gender">Gender:</label>
+    <select id="gender">
+        <option value="1">Male</option>
+        <option value="0">Other</option>
+        <option value="2">Female</option>
+    </select><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="1" placeholder="Enter your age"><br>
+
+    <label for="hypertension">Hypertension:</label>
+    <select id="hypertension">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br>
+
+    <label for="heart_disease">Heart Disease:</label>
+    <select id="heart_disease">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br>
+	
+    <label for="smoking_history">Smoking History:</label>
+    <select id="smoking_history">
+        <option value="0">never</option>
+        <option value="1">No Info</option>
+        <option value="2">current</option>
+        <option value="3">former</option>
+        <option value="4">ever</option>
+        <option value="5">not current</option>
+    </select><br>
+
+    <label for="bmi">BMI:</label>
+    <input type="number" id="bmi" step="0.01" placeholder="Enter your BMI"><br>
+
+    <label for="hba1c_level">HbA1c Level:</label>
+    <input type="number" id="hba1c_level" step="0.01" placeholder="Enter your HbA1c level"><br>
+
+    <label for="blood_glucose_level">Blood Glucose Level:</label>
+    <input type="number" id="blood_glucose_level" step="0.01" placeholder="Enter your blood glucose level"><br>
+
+    <button onclick="predictDiabetes()">Predict Diabetes</button>
+
+    <div id="result"></div>
+
+    <!-- Include the Eel JavaScript library -->
+    <script src="/eel.js"></script>
+
+    <script>
+        function predictDiabetes() {
+            const gender = document.getElementById('gender').value;
+            const age = document.getElementById('age').value;
+            const hypertension = document.getElementById('hypertension').value;
+            const heartDisease = document.getElementById('heart_disease').value;
+			const smokingHistory = document.getElementById('smoking_history').value;
+            const bmi = document.getElementById('bmi').value;
+            const hba1cLevel = document.getElementById('hba1c_level').value;
+            const bloodGlucoseLevel = document.getElementById('blood_glucose_level').value;
+
+            // Send the input data to the Python function using Eel
+            eel.Diabetes_Prediction(gender, smokingHistory, age, hypertension, heartDisease, bmi, hba1cLevel, bloodGlucoseLevel)(
+                function(response) {
+                    document.getElementById('result').innerText = response;
+                });
+        }
+    </script>
+</body>
+</html>

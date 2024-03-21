@@ -1,5 +1,5 @@
 # Diabetes Prediction Using Machine Learninng
-## External Library Used Pandas,Seaborn,Numpy,Scikit-Learn,Eel,MatplotLib,
+## External Library Used Pandas,Seaborn,Numpy,Scikit-Learn,Eel,MatplotLib
 ### Installing :- go to Terminal/CommandPrompt type ```pip install -r reqdment.txt``` or run ```installer.py```
 
 **Creating Jupyter Environment**

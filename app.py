@@ -29,9 +29,10 @@ def predict_diabetes(input_data):
         #print(predictionX)
         return prediction[0],predictionX[0],"Has Diabetes" if prediction[0] == 1 else "Does Not Have Diabetes"
     except Exception as e:
+        print(f"Error predicting: {str(e)}")
         return prediction[0],predictionX[0],"Has Diabetes" if predictionX[0] == 1 else "Does Not Have Diabetes"
     else:
-        return f"Error predicting: {str(e)}"
+        return "Error predicting"
 
 #Expanding My Database 
 def write_to_csv(input_data,without_scaler,with_scaler,compare):
@@ -60,7 +61,7 @@ def Diabetes_Prediction(gender, age, hypertension, heart_disease, smoking_histor
         write_to_csv(input_data,without_scaler,with_scaler,compare)
         return result
     except Exception as e:
-        return f"Error processing input: {str(e)}"
+        return f"Please Enter All Data Correctly, Error processing input: {str(e)}"
 
 # Start the Eel application
 try:

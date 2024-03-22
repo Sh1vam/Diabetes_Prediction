@@ -20,7 +20,7 @@ The Diabetes prediction dataset is a collection of medical and demographic data 
 
 => Gender - Gender refers to the biological sex of the individual, which can have an impact on their susceptibility to diabetes.
 
-         -   male
+         -  male
          -  other
          -  female
          

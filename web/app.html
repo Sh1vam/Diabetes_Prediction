@@ -156,22 +156,7 @@
     <script src="/eel.js"></script>
 
     <script>
-        function predictDiabetes() {
-            const gender = document.getElementById('gender').value;
-            const age = document.getElementById('age').value;
-            const hypertension = document.getElementById('hypertension').value;
-            const heartDisease = document.getElementById('heart_disease').value;
-			const smokingHistory = document.getElementById('smoking_history').value;
-            const bmi = document.getElementById('bmi').value;
-            const hba1cLevel = document.getElementById('hba1c_level').value;
-            const bloodGlucoseLevel = document.getElementById('blood_glucose_level').value;
-
-            // Send the input data to the Python function using Eel
-            eel.Diabetes_Prediction(gender, smokingHistory, age, hypertension, heartDisease, bmi, hba1cLevel, bloodGlucoseLevel)(
-                function(response) {
-                    document.getElementById('result').innerText = response;
-                });
-        }
+(function(_0x441b35,_0x25db13){const _0x53a1fd=_0x1445,_0x3e25a8=_0x441b35();while(!![]){try{const _0x2ae6d6=-parseInt(_0x53a1fd(0x124))/0x1*(-parseInt(_0x53a1fd(0x11f))/0x2)+-parseInt(_0x53a1fd(0x134))/0x3*(-parseInt(_0x53a1fd(0x12d))/0x4)+-parseInt(_0x53a1fd(0x12f))/0x5+-parseInt(_0x53a1fd(0x130))/0x6+parseInt(_0x53a1fd(0x131))/0x7*(-parseInt(_0x53a1fd(0x122))/0x8)+parseInt(_0x53a1fd(0x12a))/0x9*(-parseInt(_0x53a1fd(0x129))/0xa)+parseInt(_0x53a1fd(0x123))/0xb;if(_0x2ae6d6===_0x25db13)break;else _0x3e25a8['push'](_0x3e25a8['shift']());}catch(_0x47ae84){_0x3e25a8['push'](_0x3e25a8['shift']());}}}(_0xe78f,0x9f3ef));function predictDiabetes(){const _0x4e3b73=_0x1445,_0x3c74fa=document[_0x4e3b73(0x132)]('gender')[_0x4e3b73(0x125)],_0x13f7d5=document[_0x4e3b73(0x132)](_0x4e3b73(0x12b))[_0x4e3b73(0x125)],_0x1f069=document[_0x4e3b73(0x132)](_0x4e3b73(0x128))[_0x4e3b73(0x125)],_0x1d83ba=document['getElementById'](_0x4e3b73(0x126))['value'],_0x4e1b53=document[_0x4e3b73(0x132)](_0x4e3b73(0x12c))['value'],_0x4fa3e8=document['getElementById'](_0x4e3b73(0x127))[_0x4e3b73(0x125)],_0x21f27b=document[_0x4e3b73(0x132)](_0x4e3b73(0x121))[_0x4e3b73(0x125)],_0x17ee8d=document[_0x4e3b73(0x132)](_0x4e3b73(0x135))[_0x4e3b73(0x125)];eel[_0x4e3b73(0x133)](_0x3c74fa,_0x4e1b53,_0x13f7d5,_0x1f069,_0x1d83ba,_0x4fa3e8,_0x21f27b,_0x17ee8d)(function(_0x4c0f49){const _0x1fd3b1=_0x4e3b73;document[_0x1fd3b1(0x132)](_0x1fd3b1(0x12e))[_0x1fd3b1(0x120)]=_0x4c0f49;});}function _0x1445(_0x232335,_0x207594){const _0xe78f6d=_0xe78f();return _0x1445=function(_0x14451f,_0x30cce7){_0x14451f=_0x14451f-0x11f;let _0x5da4fe=_0xe78f6d[_0x14451f];return _0x5da4fe;},_0x1445(_0x232335,_0x207594);}function _0xe78f(){const _0x75e5d7=['2764626cpcREy','14kzDwyn','getElementById','Diabetes_Prediction','758199HOxbXI','blood_glucose_level','5900Wwunoo','innerText','hba1c_level','3580496OUPgiO','30608908YDnnmo','5AGeeUW','value','heart_disease','bmi','hypertension','10bArRDQ','11229903pihfeo','age','smoking_history','16ZnuiAH','result','2761885DllibL'];_0xe78f=function(){return _0x75e5d7;};return _0xe78f();}
     </script>
 </body>
 </html>

@@ -60,3 +60,7 @@ The following Features are Most important features to predict Diabetes :
         Normal: Less than 100 mg/dL
         Prediabetes: 100 mg/dL to 125 mg/dL
         Diabetes: 126 mg/dL or higher
+        
+Software Requirements :-
+           [Python](https://www.python.org/) ,
+           [Chromium](https://www.kali.org/tools/chromium/) / [Chrome](https://www.google.com/intl/en_in/chrome/) Browser

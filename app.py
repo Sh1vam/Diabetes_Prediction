@@ -65,6 +65,6 @@ def Diabetes_Prediction(gender, age, hypertension, heart_disease, smoking_histor
 
 # Start the Eel application
 try:
-    eel.start('app.html', size=(800, 600))
+    eel.start('index.html', size=(800, 600))
 except Exception as e:
     print(f"Error starting Eel: {e}")

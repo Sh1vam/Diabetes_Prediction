@@ -1,4 +1,4 @@
-# Diabetes Prediction Using Machine Learninng
+# [Diabetes Prediction Using Machine Learning](https://replit.com/@shivampatel2552/DiabetesPredictionUsingMachineLearning)
 ## External Library Used Pandas,Seaborn,Numpy,Scikit-Learn,Eel,MatplotLib
 ### Installing :- go to Terminal/CommandPrompt type ```pip install -r reqdment.txt``` or run ```installer.py```
 
@@ -48,6 +48,8 @@ The Diabetes prediction dataset is a collection of medical and demographic data 
 => Diabetes - Diabetes is the target variable being predicted, with values of 1 indicating the presence of diabetes and 0 indicating the absence of diabetes.
 
 Note:-
+
+The following Features are Most important features to predict Diabetes :
 
     HbA1c level:
         Normal: Less than 5.7%

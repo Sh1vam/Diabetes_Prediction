@@ -61,6 +61,9 @@ The following Features are Most important features to predict Diabetes :
         Prediabetes: 100 mg/dL to 125 mg/dL
         Diabetes: 126 mg/dL or higher
         
+## [See Model at Kaggel](https://www.kaggle.com/sh1vam2003/diabetes-prediction)
+## [Run Application on Repelit](https://replit.com/@shivampatel2552/DiabetesPredictionUsingMachineLearning)
+
 Software Requirements :-
            [Python](https://www.python.org/) ,
            [Chromium](https://www.kali.org/tools/chromium/) / [Chrome](https://www.google.com/intl/en_in/chrome/) Browser

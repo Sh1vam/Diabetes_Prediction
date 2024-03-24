@@ -67,3 +67,11 @@ The following Features are Most important features to predict Diabetes :
 Software Requirements :-
            [Python](https://www.python.org/) ,
            [Chromium](https://www.kali.org/tools/chromium/) / [Chrome](https://www.google.com/intl/en_in/chrome/) Browser
+
+# Future Scope
+
++ Ask User if the Output is correct to not and then add/record user response to CSV File. <p>
++ Add Obesity Prediction based on BMI and also predict its Category. <p>
++ Predict if person is UnderWeight or not based on BMI. <p>
++ Instead of taking BMI use Hight and Weight of person to calculate it based on formula. <p>
++ Add Explaination for given output.

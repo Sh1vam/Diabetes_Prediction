@@ -1,6 +1,7 @@
 # [Diabetes Prediction Using Machine Learning](https://replit.com/@shivampatel2552/DiabetesPredictionUsingMachineLearning)
-## External Library Used Pandas,Seaborn,Numpy,Scikit-Learn,Eel,MatplotLib
-### Installing :- go to Terminal/CommandPrompt type ```pip install -r reqdment.txt``` or run ```installer.py```
+## External Library Used 
+### Pandas,Seaborn,Numpy,Scikit-Learn,Eel,MatplotLib
+#### Installing :- go to Terminal/CommandPrompt type ```pip install -r reqdment.txt``` or run ```installer.py```
 
 **Creating Jupyter Environment**
 1) Download Suitable Python installer from [Python.Org](https://www.python.org/)

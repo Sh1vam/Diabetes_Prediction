@@ -62,7 +62,7 @@ The following Features are Most important features to predict Diabetes :
         Diabetes: 126 mg/dL or higher
         
 ## [See Model at Kaggel](https://www.kaggle.com/sh1vam2003/diabetes-prediction)
-## [Run Application on Repelit](https://replit.com/@shivampatel2552/DiabetesPredictionUsingMachineLearning)
+## [Run Application on Replit](https://replit.com/@shivampatel2552/DiabetesPredictionUsingMachineLearning)
 
 Software Requirements :-
            [Python](https://www.python.org/) ,
